@@ -1,5 +1,5 @@
 {% set name = "segment-geospatial" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/segment-geospatial-{{ version }}.tar.gz
-  sha256: 621e66d90715a288909c8bec6eda44e475c6f5ceceac5c8e999ff3ca49bbd194
+  sha256: ccd02f71751dcbb23c48df3ce64e607dcdafe58a058a458a2bc1996fc5127d17
 
 build:
   noarch: python
@@ -40,8 +40,9 @@ test:
 
 about:
   home: https://github.com/opengeos/segment-geospatial
-  summary: Meta AI' Segment Anything Model (SAM) for Geospatial Data
-  description: Meta AI' Segment Anything Model (SAM) for Geospatial Data
+  summary: A Python package for segmenting geospatial data with the Segment Anything Model (SAM)
+  description: A Python package for segmenting geospatial data with the Segment Anything Model (SAM)
+  doc_url: https://geosam.gishub.org
   license: MIT
   license_file: LICENSE
 
