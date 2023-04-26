@@ -7,9 +7,11 @@ Home: https://github.com/opengeos/segment-geospatial
 
 Package license: MIT
 
-Summary: Meta AI' Segment Anything Model (SAM) for Geospatial Data
+Summary: A Python package for segmenting geospatial data with the Segment Anything Model (SAM)
 
-Meta AI' Segment Anything Model (SAM) for Geospatial Data
+Documentation: https://geosam.gishub.org
+
+A Python package for segmenting geospatial data with the Segment Anything Model (SAM)
 
 Current build status
 ====================
