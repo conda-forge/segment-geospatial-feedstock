@@ -1,5 +1,5 @@
 {% set name = "segment-geospatial" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/segment-geospatial-{{ version }}.tar.gz
-  sha256: 1a3644fe3477c9c5f797b7031e4d206b95c43cedce624c2f963a4b8e7c7ca963
+  sha256: 98590c82660fc5ff5be3aa4f87ad9b663ce0b9507e321b16605caf08e5a75e1d
 
 build:
   noarch: python
@@ -24,14 +24,15 @@ requirements:
     - opencv
     - pycocotools
     - matplotlib-base
-    - onnxruntime
-    - onnx
+    - huggingface_hub
     - geopandas
     - rasterio
     - tqdm
     - gdown
     - xyzservices
     - pyproj
+    - leafmap
+    - localtileserver
 
 test:
   imports:
