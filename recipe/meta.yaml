@@ -33,6 +33,8 @@ requirements:
     - pyproj
     - leafmap
     - localtileserver
+    - segment-anything-hq
+    - timm
 
 test:
   imports:
