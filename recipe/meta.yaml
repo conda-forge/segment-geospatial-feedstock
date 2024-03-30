@@ -44,6 +44,7 @@ test:
     - pip check
   requires:
     - pip
+    - libopencv *=headless*  # [linux]
 
 about:
   home: https://github.com/opengeos/segment-geospatial
