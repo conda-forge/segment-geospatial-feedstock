@@ -1,5 +1,5 @@
 {% set name = "segment-geospatial" %}
-{% set version = "0.10.2" %}
+{% set version = "0.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/segment-geospatial-{{ version }}.tar.gz
-  sha256: d998b0914687f416311ea25e6e598df54c6c99ba2e8d1313bd691327e2753371
+  sha256: da2d80e7c42fe917d481c4cad7b0ebd58ea74ea9e0d2bc411d2fb3b9d8035af6
 
 build:
   noarch: python
@@ -35,6 +35,7 @@ requirements:
     - localtileserver
     - segment-anything-hq
     - timm
+    - patool
 
 test:
   imports:
