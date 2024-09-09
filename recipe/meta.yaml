@@ -1,5 +1,5 @@
 {% set name = "segment-geospatial" %}
-{% set version = "0.10.7" %}
+{% set version = "0.10.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 02986494eb820c8386e8fa415578336ea4b81b0e4a4957912de506fda872ddcb
+  sha256: 53121ae17abee94fd5fe97eec8624232434566d680d1dae82ff74d1b4c6a1d69
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - setuptools >=61.0
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - segment-anything
     - opencv
     - pycocotools
@@ -36,6 +36,7 @@ requirements:
     - pyproj
     - leafmap
     - localtileserver
+    - sam2
     - segment-anything-hq
     - timm
     - patool
