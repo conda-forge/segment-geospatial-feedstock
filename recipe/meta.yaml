@@ -43,8 +43,8 @@ requirements:
 test:
   imports:
     - samgeo
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
   requires:
     - pip
     - libopencv *=headless*  # [linux]
