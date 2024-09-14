@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -50,6 +50,25 @@ test:
     - pip
     - libopencv *=headless*  # [linux]
 
+outputs:
+  - name: segment-geospatial
+  - name: samgeo
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - {{ pin_subpackage("segment-geospatial", exact=True) }}
+
+    test:
+      imports:
+        - samgeo
+      requires:
+        - pip
+        - libopencv *=headless*  # [linux]
+        
 about:
   home: https://github.com/opengeos/segment-geospatial
   summary: A Python package for segmenting geospatial data with the Segment Anything Model (SAM)

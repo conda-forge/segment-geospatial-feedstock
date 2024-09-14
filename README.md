@@ -31,6 +31,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-samgeo-green.svg)](https://anaconda.org/conda-forge/samgeo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/samgeo.svg)](https://anaconda.org/conda-forge/samgeo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/samgeo.svg)](https://anaconda.org/conda-forge/samgeo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/samgeo.svg)](https://anaconda.org/conda-forge/samgeo) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-segment--geospatial-green.svg)](https://anaconda.org/conda-forge/segment-geospatial) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/segment-geospatial.svg)](https://anaconda.org/conda-forge/segment-geospatial) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/segment-geospatial.svg)](https://anaconda.org/conda-forge/segment-geospatial) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/segment-geospatial.svg)](https://anaconda.org/conda-forge/segment-geospatial) |
 
 Installing segment-geospatial
@@ -43,41 +44,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `segment-geospatial` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `samgeo, segment-geospatial` can be installed with `conda`:
 
 ```
-conda install segment-geospatial
-```
-
-or with `mamba`:
-
-```
-mamba install segment-geospatial
-```
-
-It is possible to list all of the versions of `segment-geospatial` available on your platform with `conda`:
-
-```
-conda search segment-geospatial --channel conda-forge
+conda install samgeo segment-geospatial
 ```
 
 or with `mamba`:
 
 ```
-mamba search segment-geospatial --channel conda-forge
+mamba install samgeo segment-geospatial
+```
+
+It is possible to list all of the versions of `samgeo` available on your platform with `conda`:
+
+```
+conda search samgeo --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search samgeo --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search segment-geospatial --channel conda-forge
+mamba repoquery search samgeo --channel conda-forge
 
-# List packages depending on `segment-geospatial`:
-mamba repoquery whoneeds segment-geospatial --channel conda-forge
+# List packages depending on `samgeo`:
+mamba repoquery whoneeds samgeo --channel conda-forge
 
-# List dependencies of `segment-geospatial`:
-mamba repoquery depends segment-geospatial --channel conda-forge
+# List dependencies of `samgeo`:
+mamba repoquery depends samgeo --channel conda-forge
 ```
 
 
