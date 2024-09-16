@@ -1,5 +1,5 @@
 {% set name = "segment-geospatial" %}
-{% set version = "0.10.8" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 53121ae17abee94fd5fe97eec8624232434566d680d1dae82ff74d1b4c6a1d69
+  sha256: 01a49c5228a0566f444305fb460c50741e80d4aa13453d1625248e3a05a6b6ed
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
     - pycocotools
     - matplotlib-base
     - huggingface_hub
+    - fiona
     - geopandas
     - rasterio
     - tqdm
