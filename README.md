@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: A Python package for segmenting geospatial data with the Segment Anything Model (SAM)
 
-Documentation: https://geosam.gishub.org
+Documentation: https://samgeo.gishub.org
 
 A Python package for segmenting geospatial data with the Segment Anything Model (SAM)
 
