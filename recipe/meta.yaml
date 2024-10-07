@@ -1,5 +1,5 @@
 {% set name = "segment-geospatial" %}
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ec59d79c705c8daf46f593be9f513c5afa8a971ada908bcaacb9df1bab6a32c6
+  sha256: 07be3b431d1985f97d9f07eba8b3a423ecc7d7c06ca21900774c3ef487bed355
 
 build:
   noarch: python
@@ -37,7 +37,10 @@ requirements:
     - pyproj
     - leafmap
     - localtileserver
+    - rioxarray
     - sam2
+    - scikit-image
+    - scikit-learn
     - segment-anything-hq
     - timm
     - patool
