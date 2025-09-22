@@ -150,6 +150,3 @@ Feedstock Maintainers
 
 * [@giswqs](https://github.com/giswqs/)
 
-
-<!-- dummy commit to enable rerendering -->
-
