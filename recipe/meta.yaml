@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "segment-geospatial" %}
-{% set version = "0.15.1" %}
+{% set version = "0.15.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/segment_geospatial-{{ version }}.tar.gz
-  sha256: 219cc9bf0acc5bd21d07e43356ea731ff67a3211bc996d6ced29bba346850498
+  sha256: 45bbb517f24206d97a027952ea8d583d4a55454bc489305140bea5cbecefe9f4
 
 build:
   noarch: python
