@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -39,13 +39,16 @@ requirements:
     - leafmap
     - localtileserver
     - rioxarray
-    - sam2
+    - sam3
     - scikit-image
     - scikit-learn
-    - segment-anything-hq
     - timm
     - patool
     - ipympl
+    - transformers
+    - buildingregulariser
+    - spacy
+    
 
 test:
   imports:
