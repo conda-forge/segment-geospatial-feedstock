@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -27,7 +27,7 @@ requirements:
     - pycocotools
     - matplotlib-base
     - huggingface_hub
-    - fiona
+    # - fiona
     - geopandas
     - rasterio
     - tqdm
